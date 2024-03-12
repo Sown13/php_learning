@@ -32,7 +32,7 @@
             while($row = mysqli_fetch_array($result)){
                 echo "<tr>";
                 echo  "<th scope='row'>". $row['Personid'] ."</a></th>";
-                echo  "<td>". "<a href='./info.php?id=". $row['Personid']."'>". $row['FirstName'] . "</a>" . "</td>";
+                echo  "<td>". "<a href='./detail.php?id=". $row['Personid']."'>". $row['FirstName'] . "</a>" . "</td>";
                 echo  "<td>". $row['LastName']."</td>";
                 echo  "<td>". $row['Age']."</td>";
                 echo  "<td>". $row['Address']."</td>";
